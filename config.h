@@ -71,8 +71,8 @@ static const struct arg args[] = {
     {cpu_perc, "%s  "},
     {disk_perc, "%s  ", "/"},
     /* {load_avg, "%s  "}, */
-    {run_command, "%s  ", "cat /etc/nixos/.weather.cache"},
-    {run_command, "%s  ", "cat /etc/nixos/.ip.cache"},
+    {run_command, "%s  ", "cat /tmp/wttr"},
+    {run_command, "%s  ", "cat /tmp/ip"},
     {datetime, "%s  ", "%B %d %A %R"},
     {keymap, "%s  "},
     {battery_perc, "%s", "BAT0"}};

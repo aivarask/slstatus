@@ -66,6 +66,7 @@ static const char unknown_str[] = "---";
 
 static const struct arg args[] = {
     {run_command, "%s  ", "mpc current"},
+    {run_command, "%s ", "sensors | awk '/^Tctl/ {print $2}'"},
     {netspeed_tx, "%s  ", "wlp6s0"},
     /* {netspeed_rx, "%s  ", "wlp6s0"}, */
     {cpu_perc, "%s  "},

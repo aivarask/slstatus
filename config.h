@@ -65,15 +65,16 @@ static const char unknown_str[] = "---";
  */
 
 static const struct arg args[] = {
-    {run_command, "%s  ", "mpc current"},
-    {run_command, "%s ", "sensors | awk '/^Tctl/ {print $2}'"},
-    {netspeed_tx, "%s  ", "wlp6s0"},
-    /* {netspeed_rx, "%s  ", "wlp6s0"}, */
-    {cpu_perc, "%s  "},
-    {disk_perc, "%s  ", "/"},
-    /* {load_avg, "%s  "}, */
-    {run_command, "%s  ", "cat /tmp/wttr"},
-    {run_command, "%s  ", "cat /tmp/ip"},
-    {datetime, "%s  ", "%B %d %A %R"},
-    {keymap, "%s  "},
-    {battery_perc, "%s", "BAT0"}};
+    {netspeed_rx, "⏬%s", "wlp6s0"},
+    {netspeed_tx, "🔀%s", "wlp6s0"},
+    {run_command, "🎵%s", "mpc current"},
+    {run_command, "🌡️%s", "sensors | awk '/^Tctl/ {print $2}'"},
+    {cpu_perc, "💻%s"},
+    {disk_perc, "💾%s", "/"},
+    {run_command, "%s", "cat /tmp/wttr"},
+    {run_command, "👾%s  ", "cat /tmp/ip"},
+    {datetime, "🗓️%s", "%B %d %A %R"},
+    {keymap, "⌨️ %s"},
+    {battery_perc, "🔋%s", "BAT0"},
+    {wifi_essid, "📡%s", "wlp6s0"},
+    {wifi_perc, "📶%s", "wlp6s0"}};
